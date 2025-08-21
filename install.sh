@@ -19,6 +19,12 @@ cp -r deskram.tmux lib main.sh plugins "$TARGET_DIR"
 # Copy the entire 'scripts' directory to the target location
 cp -r scripts "$SCRIPTS_DIR"
 
+# ✅ Add execute permissions to all necessary scripts
+chmod +x "$TARGET_DIR/deskram.tmux"
+chmod +x "$TARGET_DIR/main.sh"
+find "$TARGET_DIR/plugins" -type f -name "*.sh" -exec chmod +x {} \;
+find "$SCRIPTS_DIR/scripts" -type f -name "*.sh" -exec chmod +x {} \;
+
 # Backup existing .tmux.conf if it exists
 if [ -f "$TMUX_CONF" ]; then
     cp "$TMUX_CONF" "$TMUX_CONF.bak"

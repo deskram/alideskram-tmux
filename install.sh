@@ -37,10 +37,10 @@ echo "✔ Theme installed to $TARGET_DIR"
 echo "✔ Config installed to $TMUX_CONF"
 
 # Ask user if they want to auto-start tmux in zsh
-read -p "Do you want to enable auto-start tmux in Zsh (Termux)? [y/N] " choice
+read -p "Do you want to enable auto-start tmux in Zsh? [y/N] " choice
 if [[ "$choice" =~ ^[Yy]$ ]]; then
     AUTO_START='
-# Auto-start tmux in Termux
+# Auto-start tmux in Terminal
 if [ -z "$TMUX" ] && [ -z "$TMUX_STARTED" ]; then
   export TMUX_STARTED=1
   exec tmux new-session || exit

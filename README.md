@@ -100,7 +100,7 @@ if [ -z "$TMUX" ] && [ -z "$TMUX_STARTED" ]; then
 fi
 ```
 
-This makes **tmux start by default** every time you open Termux or zsh.
+This makes **tmux start by default** every time you open .bashrc or .zshrc .
 
 ---
 

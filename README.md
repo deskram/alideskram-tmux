@@ -35,6 +35,26 @@ Supports Linux (Debian, Ubuntu, Arch, Fedora) and macOS.
 ---
 
 ## 🚀 Installation
+Requirements: `tmux` (v1.9+), `git`, `bash`, `curl`, `unzip`, `fc-list`
+
+### tmux Installation Commands
+
+| Platform                | Install Command             |
+|-------------------------|-----------------------------|
+| Arch Linux              | sudo pacman -S tmux         |
+| Debian or Ubuntu        | sudo apt install tmux       |
+| Fedora                  | sudo dnf install tmux       |
+| RHEL or CentOS          | sudo yum install tmux       |
+| openSUSE                | sudo zypper install tmux    |
+| macOS (Homebrew)        | brew install tmux           |
+| macOS (MacPorts)        | sudo port install tmux      |
+|-------------------------|-----------------------------|
+
+Clone TPM:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
 Clone and run the installer:
 

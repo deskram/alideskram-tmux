@@ -90,7 +90,6 @@ get_plugin_colors() {
     get_tmux_option "@alideskram-${plugin_name}-colors" "$default_colors"
 }
 
-# ملاحظة: الدالة التالية غير مستخدمة، أبقيناها للتوافق
 get_plugin_bg() {
     IFS=' ' read -r -a colors <<<"$(get_plugin_colors "$1")"
     echo "${colors[0]}"
@@ -231,7 +230,6 @@ set_theme() {
         dark_yellow=$(get_tmux_option "@alideskram-dark-yellow" "$duo_fg")
         ;;
     "nord")
-        # ثيم Nord حسب البالِت اللي طلبتها
         black=$(get_tmux_option "@alideskram-black" '#2e3440')
         gray=$(get_tmux_option "@alideskram-gray"  '#3b4252')
         white=$(get_tmux_option "@alideskram-white" '#e5e9f0')
@@ -273,7 +271,6 @@ set_theme() {
         done
     fi
 
-    # متغيرات تدرّج المثلثات (يُسمح باستخدام bg_seg1/2/3 كأسماء ألوان)
     bg_seg1=$(get_tmux_option "@alideskram-bg-seg1" "$gray")
     bg_seg2=$(get_tmux_option "@alideskram-bg-seg2" "$blue")
     bg_seg3=$(get_tmux_option "@alideskram-bg-seg3" "$green")
@@ -314,7 +311,6 @@ status_bar() {
         plugins=("${rplugins[@]}")
     fi
 
-    # بداية يمين الشريط من خلفية البار لتتدرج المثلثات صح
     if [ "$side" != "left" ]; then
         pl_bg=${bg_main}
     fi

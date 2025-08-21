@@ -2,6 +2,7 @@
 set -e
 
 TARGET_DIR="$HOME/.tmux/alideskram"
+SCRIPTS_DIR="$HOME/.tmux"
 TMUX_CONF="$HOME/.tmux.conf"
 ZSHRC="$HOME/.zshrc"
 FONT_NAME="3270 Nerd Font Mono"
@@ -14,6 +15,9 @@ mkdir -p "$TARGET_DIR"
 
 # Copy theme files (excluding install.sh itself)
 cp -r deskram.tmux lib main.sh plugins "$TARGET_DIR"
+
+# Copy the entire 'scripts' directory to the target location
+cp -r scripts "$SCRIPTS_DIR"
 
 # Backup existing .tmux.conf if it exists
 if [ -f "$TMUX_CONF" ]; then

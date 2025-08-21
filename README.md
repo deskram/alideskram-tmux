@@ -1,5 +1,7 @@
 # 🎨 alideskram-tmux Theme
 
+>## **Author:** Ali Dirawi
+
 A modern **tmux theme** with built-in plugins for productivity, performance monitoring, and a clean cyber look.  
 Supports Linux (Debian, Ubuntu, Arch, Fedora) and macOS.
 
@@ -41,14 +43,14 @@ Requirements: `tmux` (v1.9+), `git`, `bash`, `curl`, `unzip`, `fc-list`
 
 | Platform                | Install Command             |
 |-------------------------|-----------------------------|
-| Arch Linux              | sudo pacman -S tmux         |
-| Debian or Ubuntu        | sudo apt install tmux       |
-| Fedora                  | sudo dnf install tmux       |
-| RHEL or CentOS          | sudo yum install tmux       |
-| openSUSE                | sudo zypper install tmux    |
-| macOS (Homebrew)        | brew install tmux           |
-| macOS (MacPorts)        | sudo port install tmux      |
-|-------------------------|-----------------------------|
+| Arch Linux              | `sudo pacman -S tmux`         |
+| Debian or Ubuntu        | `sudo apt install tmux`       |
+| Fedora                  | `sudo dnf install tmux`       |
+| RHEL or CentOS          | `sudo yum install tmux`       |
+| openSUSE                | `sudo zypper install tmux`    |
+| macOS (Homebrew)        | `brew install tmux`           |
+| macOS (MacPorts)        | `sudo port install tmux`      |
+
 
 Clone TPM:
 

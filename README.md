@@ -70,7 +70,7 @@ cd alideskram-tmux
 
 * Copies files into:
 
-  * `~/.tmux/alideskram-tmux`
+  * `~/.tmux/alideskram`
   * `~/.tmux.conf` (backs up your existing config)
 * Installs **3270 Nerd Font Mono** (optional)
 * Adds **auto-start tmux on zsh** (optional)
@@ -136,7 +136,7 @@ tmux source-file ~/.tmux.conf
 Remove everything:
 
 ```bash
-rm -rf ~/.tmux/alideskram-tmux
+rm -rf ~/.tmux/alideskram
 rm -f ~/.tmux.conf
 ```
 

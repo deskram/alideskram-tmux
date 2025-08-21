@@ -31,6 +31,7 @@ Supports Linux (Debian, Ubuntu, Arch, Fedora) and macOS.
   - Designed for **3270 Nerd Font Mono**
   - Works with any Nerd Font (fallback supported)
 
+![Screenshot](assets/image/screenshot.png)
 ---
 
 ## 🚀 Installation

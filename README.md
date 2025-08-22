@@ -51,6 +51,38 @@ Requirements: `tmux` (v1.9+), `git`, `bash`, `curl`, `unzip`, `fc-list`
 | macOS (Homebrew)        | `brew install tmux`           |
 | macOS (MacPorts)        | `sudo port install tmux`      |
 
+Sure! Here’s a concise English version:
+
+
+# Enable Copy-Paste in Linux VM (VMware)
+
+1. Update packages:
+```bash
+sudo apt update
+````
+
+2. Install VMware tools:
+
+```bash
+sudo apt install open-vm-tools open-vm-tools-desktop
+```
+
+3. Enable and start service:
+
+```bash
+sudo systemctl enable --now open-vm-tools
+```
+
+4. (Optional) Install clipboard tools:
+
+```bash
+sudo apt install xclip xsel
+```
+
+You can now copy and paste between host and VM.
+---
+
+
 
 Clone TPM:
 
